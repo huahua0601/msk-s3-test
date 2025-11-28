@@ -1,0 +1,13 @@
+name: msk-test
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - kafka-python==2.0.2
+    - confluent-kafka==2.3.0
+variables:
+  KAFKA_BOOTSTRAP_SERVERS: "boot-nm1.democluster.zc4yi8.c5.kafka.us-east-1.amazonaws.com:9092,boot-y8y.democluster.zc4yi8.c5.kafka.us-east-1.amazonaws.com:9092,boot-dw1.democluster.zc4yi8.c5.kafka.us-east-1.amazonaws.com:9092"
+
